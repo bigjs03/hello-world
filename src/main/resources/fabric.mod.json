@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "immersed_with_shading",
+  "version": "${version}",
+  "name": "Immersed With Shading",
+  "description": "Small held items, Iris/Sodium-friendly, cloud-synced config, and a singleplayer/LAN-only bridge trainer.",
+  "authors": ["byg j"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": ["com.bygj.immersed.ImmersedMod"],
+    "client": ["com.bygj.immersed.ImmersedClient"]
+  },
+  "mixins": ["immersed.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.5",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "iris": "*",
+    "sodium": "*"
+  }
+}
